@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_gordondickens_simail_entity_Recipient" object="${recipient}" z="y9z1+WfqderRxGOoUKHQ83D68ss=">
+        <field:display field="recipientEmail" id="s_com_gordondickens_simail_entity_Recipient_recipientEmail" object="${recipient}" z="S6eMQvW5zYYArY/tnFZVn8UzQAA="/>
+        <field:display field="subject" id="s_com_gordondickens_simail_entity_Recipient_subject" object="${recipient}" z="3eydTyDgeqPQrCxOrVu/4I/WwpU="/>
+        <field:display field="messageBody" id="s_com_gordondickens_simail_entity_Recipient_messageBody" object="${recipient}" z="JZdsl9aHeEIeu2feLoqkdb+4RUE="/>
+    </page:show>
+</div>

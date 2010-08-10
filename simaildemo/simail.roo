@@ -1,0 +1,11 @@
+project --topLevelPackage com.gordondickens.simail
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity --class ~.entity.Recipient
+field string recipientEmail --class ~.entity.Recipient
+field string subject --class ~.entity.Recipient
+field string messageBody --class ~.entity.Recipient
+controller scaffold --class ~.web.RecipientController --entity ~.entity.Recipient
+interface --class ~.integration.MailGateway
+class --class ~.integration.RecipientMailMessageTransformer
+logging setup --level DEBUG 
+backup

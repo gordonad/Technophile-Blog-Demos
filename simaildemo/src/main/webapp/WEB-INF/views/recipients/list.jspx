@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_gordondickens_simail_entity_Recipient" items="${recipients}" z="omeer5mxXcXgBIvGROtGc4KavXE=">
+        <table:table data="${recipients}" id="l_com_gordondickens_simail_entity_Recipient" path="/recipients" z="uO3Ws2w+ElUGFn8FmiIFs1uL+7s=">
+            <table:column id="c_com_gordondickens_simail_entity_Recipient_recipientEmail" property="recipientEmail" z="9nWOGa0b5gaPURHWyYP7330JVaI="/>
+            <table:column id="c_com_gordondickens_simail_entity_Recipient_subject" property="subject" z="vu1WW0a2pAQfK1hwhjX9p0+iEWE="/>
+            <table:column id="c_com_gordondickens_simail_entity_Recipient_messageBody" property="messageBody" z="estlzaHufMdZJI2PJEf6Zb4ekWU="/>
+        </table:table>
+    </page:list>
+</div>

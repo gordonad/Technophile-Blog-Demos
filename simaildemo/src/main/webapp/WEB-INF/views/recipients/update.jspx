@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_gordondickens_simail_entity_Recipient" modelAttribute="recipient" path="/recipients" z="7nU/fnDeVecZ7IpeGmhbp9U5wuo=">
+        <field:input field="recipientEmail" id="c_com_gordondickens_simail_entity_Recipient_recipientEmail" z="JvF1jS/qpB5qj3AoX4wPxe5gDkA="/>
+        <field:input field="subject" id="c_com_gordondickens_simail_entity_Recipient_subject" z="OhSOfjnA8aKPSmNHgGzy6MBnm4Y="/>
+        <field:input field="messageBody" id="c_com_gordondickens_simail_entity_Recipient_messageBody" z="qdjyHM6CUsUQO8hklI7DtsQaHcE="/>
+    </form:update>
+</div>
