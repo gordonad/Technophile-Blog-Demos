@@ -45,14 +45,12 @@
 	
 	<beans:bean id="mailTransformer" class="com.gordondickens.simail.integration.RecipientMailMessageTransformer"/>
 
-<chain>
 	<gateway id="mailGateway" service-interface="com.gordondickens.simail.integration.MailGateway"
 		default-request-channel="xformMailChannel"/>
+		
 	<transformer input-channel="xformMailChannel" output-channel="outboundMailChannel" 
 		ref="mailTransformer" method="transform"/>
+		
 	<!-- Configure Mail  Sender -->
-	<mail:outbound-channel-adapter channel="outboundMailChannel"
-		mail-sender="mailSender" />
-</chain>
-
+	<mail:outbound-channel-adapter channel="outboundMailChannel" mail-sender="mailSender" />
 </beans:beans>
